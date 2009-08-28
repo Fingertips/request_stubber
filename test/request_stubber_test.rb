@@ -9,8 +9,7 @@ require 'action_controller/test_process'
 require 'test/unit'
 require 'test/spec'
 
-RAILS_ENV = 'development'
-require 'init'
+require 'rails/init'
 
 logger = Object.new
 %w{ debug info }.each do |attr|
