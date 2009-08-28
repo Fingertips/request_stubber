@@ -1,0 +1,32 @@
+== RequestStubber
+
+Allows you to stub a request by either delaying the request time,
+returning a specific response code, or a combination of both.
+
+Note that the RequestStubber module is only mixed-in in development mode.
+
+=== Example
+
+Delays the process time of the request, by n seconds.
+
+  class UsersController
+    def index
+      # ...
+    end
+
+    # Any request send to :index will be delayed 2 seconds.
+    delay :index, 2
+  end
+
+Returns the specified response code.
+
+  class UsersController
+    def index
+      # ...
+    end
+
+    # Any request send to :index will return a 404 response code.
+    respond :index, 404
+  end
+
+Copyright (c) 2008 Fingertips, Eloy Duran <e.duran@fngtps.com>, released under the MIT license
