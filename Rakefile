@@ -20,3 +20,15 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('README')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |s|
+    s.name = "request_stubber"
+    s.homepage = "http://github.com/Fingertips/request_stubber"
+    s.email = "eloy.de.enige@gmail.com"
+    s.authors = ["Eloy Duran"]
+    s.summary = s.description = "A simple Rails plugin to delay responses or return specific response codes. (Needs a new name.)"
+  end
+rescue LoadError
+end
