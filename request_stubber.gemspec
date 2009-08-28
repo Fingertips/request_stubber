@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION.yml",
     "lib/request_stubber.rb",
+    "rails/init.rb",
     "test/request_stubber_test.rb"
   ]
   s.has_rdoc = true

@@ -1,7 +1,8 @@
 # Allows you to stub a request by either delaying the request time,
 # returning a specific response code, or a combination of both.
 #
-# Note that the RequestStubber module is only mixed-in in development mode.
+# Note that the RequestStubber module should normally only be used in
+# development mode.
 module RequestStubber
   # Delays the process time of the request, by n seconds.
   #
